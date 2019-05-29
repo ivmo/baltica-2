@@ -1,0 +1,163 @@
+.header-bottom {
+	background: @bg-white;
+
+	.container {
+		padding-top: 19px;
+		padding-bottom: 20px;
+		font-size: 0;
+	}
+}
+
+.header-bottom__logo {
+  display: inline-block;
+	vertical-align: top;
+	width: 125px;
+	margin: 0;
+	margin-right: 23px;
+
+	@media @tablet-width {
+		width: 100px;
+		margin-right: 15px;
+	}
+
+	@media @mobile-width {
+		display: block;
+		width: 125px;
+		margin: auto;
+		margin-bottom: 10px;
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
+.header-bottom__title {
+	display: inline-block;
+	vertical-align: top;
+	width: 330px;
+	margin-top: 26px;
+	margin-right: 59px;
+  font-size: @text-size;
+	line-height: @line-height--sm;
+	color: @text-gray--dark;
+
+	@media @tablet-width {
+		margin-right: 0;
+		margin-top: 15px;
+	}
+
+	@media @mobile-width {
+		display: block;
+		width: auto;
+		margin-top: 0;
+		text-align: center;
+	}
+}
+
+.header-bottom__info {
+	display: inline-block;
+	vertical-align: top;
+
+	@media @desktop-width {
+    display: block;
+		text-align: center;
+  }
+
+	@media @tablet-width {
+		margin-top: 20px;
+	}
+}
+
+.header-bottom__contacts {
+	display: inline-block;
+	vertical-align: top;
+	width: 446px;
+	margin-right: 25px;
+	margin-top: 34px;
+	.clearfix();
+
+  @media @desktop-width--lg {
+    width: 220px;
+    margin-top: 10px;
+  }
+
+  @media @desktop-width {
+    width: 446px;
+    margin-top: 34px;
+  }
+
+	@media @tablet-width {
+		display: block;
+		margin: auto;
+		text-align: center;
+	}
+
+	@media @mobile-width {
+		display: block;
+		width: auto;
+		margin-top: 34px;
+	}
+}
+
+.header-bottom__item {
+	display: inline-block;
+	vertical-align: top;
+	width: 205px;
+	margin-right: 36px;
+	font-size: @text-size;
+	line-height: @line-height--sm;
+	font-weight: @text-bold;
+	color: @text-gray--dark;
+
+  @media @desktop-width--lg {
+    margin-bottom: 5px;
+  }
+
+  @media @desktop-width {
+    margin-bottom: 0;
+  }
+
+	@media @mobile-width {
+		display: block;
+		margin: auto;
+		margin-bottom: 15px;
+
+		&:last-child {
+			margin: auto;
+			margin-bottom: 15px;
+		}
+	}
+
+	&:before {
+		content: "";
+		float: left;
+		width: 47px;
+    height: 47px;
+		margin-right: 18px;
+		background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+	}
+
+	&--addr:before {
+    background-position: -360px -5px;
+	}
+
+	&--phone:before {
+		background-position: -360px -62px;
+	}
+
+	span {
+		font-weight: @text-normal;
+	}
+}
+
+.header-bottom__item:last-child {
+	margin-right: 0;
+}
+
+.header-bottom__link {
+	line-height: @line-height--sm;
+	color: @text-gray--dark;
+	text-decoration: none;
+}

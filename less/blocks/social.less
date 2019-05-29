@@ -1,0 +1,33 @@
+.social {
+	font-size: 0;
+}
+
+.social__item {
+  display: inline-block;
+	vertical-align: top;
+	width: 24px;
+	height: 24px;
+	margin-right: 13px;
+	background: url("../img/sprite.png");
+  background-repeat: no-repeat;
+
+	&--twitter {
+		background-position: -67px -353px;
+
+		&:hover {
+			background-position: -101px -353px;
+		}
+	}
+
+	&--facebook {
+		background-position: -233px -5px;
+
+		&:hover {
+			background-position: -267px -5px;
+		}
+	}
+
+  &:last-child {
+    margin: 0;
+  }
+}

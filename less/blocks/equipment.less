@@ -1,0 +1,51 @@
+.equipment {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	background: linear-gradient(to bottom, @bg-white 20%, @bg-opacity-blue 90%);
+  overflow: hidden;
+}
+
+.equipment--histream {
+	padding-top: 80px;
+
+  @media @tablet-width {
+    padding-top: 30px;
+  }
+}
+
+.equipment--spray {
+	background: url("../img/spray-bg.jpg");
+}
+
+.equipment--hull {
+  margin-bottom: -17px;
+	padding-bottom: 90px;
+  position: relative;
+  z-index: 2;
+}
+
+.equipment__wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 38px;
+
+	@media @desktop-width {
+		display: block;
+		// flex-direction: column;
+		// align-items: center;
+	}
+}
+
+.equipment__wrapper--content-half {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 52px;
+
+	@media @desktop-width {
+		display: flex;
+	}
+
+	@media @tablet-width {
+		display: block;
+	}
+}

@@ -1,0 +1,65 @@
+.offers {
+  background: @bg-black url("../img/offers-bg.jpg");
+  overflow: hidden;
+
+	.container {
+		padding-top: 70px;
+		padding-bottom: 70px;
+
+		@media @tablet-width {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+	}
+}
+
+.offers__list {
+	font-size: 0;
+	text-align: center;
+	padding: 0;
+	list-style: none;
+}
+
+.offers__item {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 530px;
+	margin: 0 25px 40px;
+	border: 2px solid @bg-white;
+	padding: 20px 20px 20px 40px;
+	color: @text-white;
+	font-size: @text-size--md;
+	line-height: @line-height;
+	box-sizing: border-box;
+	text-align: left;
+
+	@media @desktop-width--lg {
+		vertical-align: middle;
+    width: 430px;
+	}
+
+	@media @desktop-width {
+		width: 315px;
+	}
+
+	@media @tablet-width {
+		max-width: 500px;
+		width: auto;
+	}
+
+	&:before {
+		content: "";
+		display: block;
+		width: 62px;
+		height: 55px;
+		position: absolute;
+		top: 50%;
+    left: 0;
+		transform: translate(-50%, -50%);
+		background-image: url("../img/sprite.png");
+		background-repeat: no-repeat;
+		background-position: -5px -225px;
+
+	}
+}

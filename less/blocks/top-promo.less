@@ -1,0 +1,125 @@
+.top-promo {
+	background: url("../img/top-promo-bg.jpg") no-repeat;
+
+	.container {
+		margin-bottom: -20px;
+		padding-top: 99px;
+	}
+}
+
+.top-promo__title {
+	margin: 0;
+	margin-bottom: 50px;
+	font-size: @title-size--xxlg;
+	line-height: @line-height--largest;
+	color: @text-white;
+	font-weight: @text-bold;
+	text-transform: uppercase;
+	text-align: center;
+
+  @media @tablet-width {
+    font-size: @title-size--md;
+		line-height: @line-height--xxlg;
+  }
+}
+
+.top-promo__text {
+	max-width: 725px;
+	margin: auto;
+	margin-bottom: 30px;
+	color: @text-white;
+	text-align: center;
+	font-size: @text-size--md;
+	line-height: @line-height;
+
+  @media @mobile-width {
+    margin-bottom: 40px;
+  }
+}
+
+.top-promo__list {
+	display: flex;
+	justify-content: space-around;
+
+	@media @tablet-width {
+		flex-wrap: wrap;
+
+	}
+}
+
+.top-promo__item {
+	position: relative;
+	padding-top: 80px;
+
+	@media @desktop-width--lg {
+    width: 300px;
+	}
+
+	@media @desktop-width {
+		width: 215px;
+	}
+
+	@media @tablet-width {
+		width: 280px;
+		margin-bottom: 60px;
+		padding-top: 65px;
+	}
+
+  @media @mobile-width {
+    margin-bottom: 40px;
+  }
+
+	&--fill:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%);
+		width: 49px;
+    height: 56px;
+		background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -189px -265px;
+	}
+
+	&--fill:hover:before {
+		background-position: -248px -265px;
+	}
+
+	&--spray:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%);
+		width: 52px;
+    height: 54px;
+		background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -344px -289px;
+	}
+
+	&--spray:hover:before {
+    background-position: -5px -353px;
+	}
+
+	&--hull:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%);
+		width: 50px;
+    height: 51px;
+		background-image: url("../img/sprite.png");
+		background-repeat: no-repeat;
+		background-position: -345px -119px;
+	}
+
+	&--hull:hover:before {
+		background-position: -354px -180px;
+	}
+}

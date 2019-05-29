@@ -1,0 +1,47 @@
+.equipment-info {
+
+  @media @tablet-width {
+  	max-width: 730px;
+    width: 100%;
+  }
+}
+
+.equipment-info--half {
+	width: 49%;
+
+	@media @tablet-width {
+		width: auto;
+		margin-bottom: 30px;
+	}
+
+	@media @mobile-width {
+		text-align: center;
+	}
+}
+
+.equipment-info__title {
+	margin-left: 21px;
+	margin-bottom: 7px;
+	font-size: @text-size--xlg;
+	line-height: @line-height--lg;
+	text-transform: uppercase;
+	font-weight: @text-bold;
+
+	&--light {
+		color: @gray;
+	}
+}
+
+.equipment-info__text {
+	background: @bg-opacity-blue;
+	padding: 20px 17px;
+	font-size: @text-size--xlg;
+	line-height: @line-height--md;
+	color: @text-black;
+	border-radius: 5px;
+}
+
+.equipment-info__text--sm {
+	font-size: @text-size--lg;
+	line-height: @line-height;
+}

@@ -1,0 +1,150 @@
+.btn {
+  display: block;
+  text-decoration: none;
+
+}
+
+.btn--header {
+	display: inline-block;
+	vertical-align: top;
+	width: 130px;
+	margin-top: 34px;
+	padding: 1px 15px 5px;
+	color: @text-white;
+	background: @main-color;
+	font-size: @text-size;
+	line-height: @line-height--sm;
+  transition: background 0.2s ease-in-out;
+
+  @media @mobile-width {
+    margin-top: 20px;
+  }
+
+	&:before {
+		content: "";
+		float: left;
+		width: 29px;
+    height: 27px;
+		margin-top: 9px;
+		margin-right: 23px;
+		background-image: url("../img/sprite.png");
+		background-repeat: no-repeat;
+    background-position: -194px -5px;
+	}
+
+  &:hover {
+    background: @color-secondary;
+  }
+
+  &:hover:before {
+    animation: jump 1s ease-in-out;
+  }
+}
+
+.btn--top-promo {
+	display: block;
+	width: 330px;
+	height: 70px;
+	margin: auto;
+	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
+	background-position: -5px -65px;
+	font-size: @text-size--md;
+	line-height: @line-height--largest;
+	text-transform: uppercase;
+	font-weight: @text-bold;
+	text-align: center;
+	color: @text-white;
+	transition: all 0.2s ease;
+
+	@media @desktop-width--lg {
+		width: auto;
+	}
+
+	@media @desktop-width {
+		line-height: @line-height;
+		padding: 12px 5px;
+    box-sizing: border-box;
+	}
+
+	@media @tablet-width {
+		font-size: @text-size--sm;
+		padding-top: 25px;
+	}
+
+	&:hover {
+		background-position: -5px -145px;
+	}
+
+}
+
+.btn--logo {
+  width: 258px;
+	height: 60px;
+  margin: auto;
+	padding-top: 20px;
+	text-align: center;
+	background-image: url("../img/btn-small.png");
+	background-repeat: no-repeat;
+	color: @text-white;
+	font-size: @text-size--md;
+	line-height: @line-height--sm;
+	text-transform: uppercase;
+	transition: background 0.2s;
+	box-sizing: border-box;
+
+	&:hover {
+		background-image: url("../img/btn-small-hover.png");
+	}
+
+	&:before {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		width: 35px;
+		height: 34px;
+		margin-top: -5px;
+		margin-right: 5px;
+		background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+		background-position: -75px -5px;
+	}
+}
+
+.btn--about-bottom {
+	height: 42px;
+  margin: auto;
+	margin-bottom: 30px;
+	padding-top: 12px;
+	text-align: center;
+	border: 1px solid @main-color;
+	color: @main-color;
+	font-size: @text-size--sm;
+	line-height: @line-height--xs;
+	text-transform: uppercase;
+	transition: background 0.2s;
+	box-sizing: border-box;
+	border-radius: 5px;
+
+	&:before {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		width: 27px;
+    height: 26px;
+		margin-top: -5px;
+		margin-right: 10px;
+		background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+		background-position: -120px -5px;
+	}
+
+	&:hover {
+		background: @main-color;
+		color: @text-white;
+
+		&:before {
+			background-position: -157px -5px;
+		}
+	}
+}

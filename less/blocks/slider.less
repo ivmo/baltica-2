@@ -1,0 +1,98 @@
+.slider {
+
+}
+
+.slide {
+
+}
+
+.slide__link {
+
+	&--zoom {
+		position: relative;
+
+		&:after {
+			position: absolute;
+			left: 15px;
+			bottom: 15px;
+			content: "";
+			width: 21px;
+	    height: 21px;
+			background-image: url("../img/sprite.png");
+	    background-repeat: no-repeat;
+	    background-position: -135px -353px;
+		}
+  }
+}
+
+.slider-nav {
+	margin: auto;
+	margin-top: 15px;
+
+	.slick-current {
+		background: url("../img/border-mini.png") no-repeat;
+		background-size: 100% 100%;
+	}
+
+}
+
+.slider__mini {
+  margin: 5px;
+	padding: 5px;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.slick-prev {
+	width: 25px;
+	height: 40px;
+	background: @bg-blue;
+
+	@media @tablet-width {
+		display: none !important;
+	}
+
+	&:hover {
+    background: @bg-blue;
+	}
+}
+
+.slick-next {
+	width: 25px;
+	height: 40px;
+	background: @bg-blue;
+
+	@media @tablet-width {
+		display: none !important;
+	}
+
+	&:hover {
+    background: @bg-blue;
+	}
+}
+
+.slick-prev:before {
+	content: "";
+	position: absolute;
+	top: 7px;
+	left: 7px;
+	display: block;
+	width: 12px;
+	height: 24px;
+	background: url("../img/sprite.png") no-repeat;
+	background-position: -99px -289px;
+}
+
+.slick-next:before {
+	content: "";
+	position: absolute;
+	top: 7px;
+	right: 7px;
+	display: block;
+	width: 12px;
+	height: 24px;
+	background: url("../img/sprite.png") no-repeat;
+	background-position: -77px -289px;
+}
